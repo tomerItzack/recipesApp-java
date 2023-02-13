@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".RegisterPage">
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EmailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="20dp"
+        android:hint="Email"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/PasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmailRegister"
+        android:layout_margin="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawablePadding="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/PasswordConfirmRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PasswordRegister"
+        android:layout_margin="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawablePadding="20dp"
+        android:hint="Repeat Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PasswordConfirmRegister"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:onClick="loginFunc"
+        android:text="REGISTER"  />
+
+    <Button
+        android:id="@+id/AlreadyHAButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RegisterButton"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:onClick="signupFunc"
+        android:text="Already have an account ? " />
+</LinearLayout>
